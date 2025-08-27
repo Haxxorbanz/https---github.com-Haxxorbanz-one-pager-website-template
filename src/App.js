@@ -1,14 +1,6 @@
 import React, { useMemo, useState, useEffect } from 'react';
 import { Sun, Moon } from 'lucide-react';
 
-// =============================
-// Bishnoi Omniverse – Dark/Light Mode Version
-// - Added dark mode toggle functionality
-// - Dark mode classes applied throughout
-// - Smooth transitions between modes
-// =============================
-
-// Small helper for smooth scroll
 const scrollToId = (id) => {
   const el = document.getElementById(id);
   if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
