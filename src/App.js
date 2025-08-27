@@ -381,7 +381,7 @@ export default function App() {
           {divisions.map((d) => (
             <div
               key={d.id}
-              className="p-6 rounded-2xl bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all dark:hover:shadow-gray-900/50 hover:shadow-gray-300/70"
+              className="p-6 rounded-2xl bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 shadow-sm hover:shadow-lg transition-all dark:hover:shadow-gray-900/50 hover:shadow-gray-300/70"
             >
               <h3 className="text-xl font-semibold mb-2 dark:text-white">
                 {d.title}
@@ -406,7 +406,10 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 md:px-6 py-16">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-3xl md:text-4xl font-bold">News & Media</h2>
-            <button className="px-4 py-2 rounded-xl bg-indigo-600 text-white hover:bg-indigo-700 transition-colors">
+            <button
+              onClick={() => scrollToId('contact')}
+              className="px-4 py-2 rounded-xl bg-indigo-600 text-white hover:bg-indigo-700 transition-colors"
+            >
               Submit Press Query
             </button>
           </div>
